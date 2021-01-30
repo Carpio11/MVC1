@@ -88,7 +88,7 @@ hr {
     width: 70px;
     text-align: center;
     position: relative;
-    background: #7bc3d1;
+    background: darkorange;
     margin: 0 auto;
     margin-bottom: 30px;
     border: 0;
@@ -96,12 +96,17 @@ hr {
 /* Navigation */
 #nav {
     z-index: 9999;
+    
 }
 
     #nav.affix {
-        position: fixed;
+        position: relative;
         top: 0;
-        width: 100%
+        width: 100%;
+        display: flex;
+        float: inherit;
+     
+        
     }
 
 .navbar-custom {
@@ -109,6 +114,7 @@ hr {
     background-color: #121d1f;
     border-radius: 0px;
     padding: 10px 0;
+
 }
 
     .navbar-custom .navbar-brand {
@@ -122,7 +128,8 @@ hr {
         .navbar-custom .navbar-brand .navbar-toggle {
             padding: 4px 6px;
             font-size: 16px;
-            color: #fff;
+            color: #fff transparent;
+            
         }
 
             .navbar-custom .navbar-brand .navbar-toggle:focus, .navbar-custom .navbar-brand .navbar-toggle:active {
@@ -361,10 +368,12 @@ hr {
             width: 70px;
             height: 70px;
             margin-left: 0;
-            border: 1px solid #eee;
+            border: 3px solid #eee;
             border-radius: 100%;
             text-align: center;
-            background: #fff;
+            background-color: darkorange;
+            
+            
         }
 
             .timeline > li .timeline-image h4 {
